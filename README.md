@@ -16,6 +16,11 @@
 
 <br>
 
+## ERD
+https://www.erdcloud.com/d/8TcNeth4NEGRfXgtt
+![erd](https://github.com/mulgoms2/Fundly/assets/77871865/ec739dd8-a32b-450c-b606-4d8da6b85d83)
+
+
 ## 프로젝트 구조
 <img width="303" alt="스크린샷 2024-04-04 오후 4 19 46" src="https://github.com/mulgoms2/Fundly/assets/77871865/b0067e5e-5a94-4f8a-b7e0-9dfd7999cf1d">
 
