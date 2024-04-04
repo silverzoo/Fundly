@@ -16,8 +16,8 @@
 
 <br>
 
-## ERD
-https://www.erdcloud.com/d/8TcNeth4NEGRfXgtt
+## 📊 ERD 
+📎 https://www.erdcloud.com/d/8TcNeth4NEGRfXgtt
 ![erd](https://github.com/mulgoms2/Fundly/assets/77871865/ec739dd8-a32b-450c-b606-4d8da6b85d83)
 
 
