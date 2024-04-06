@@ -31,12 +31,8 @@
 ### 사용 기술 및 tools
 > - Front-End : JS , HTML, CSS, JQuery
 > - Back-End : Spring
-> - Database : MySQL
+> - Database : MySQL, myBatis
 > - Collab : GitHub, Notion
-
-<img width="1859" alt="스크린샷 2021-06-18 오전 7 28 39" src="https://user-images.githubusercontent.com/8219812/122530429-6cbe2700-d059-11eb-98e9-bdb8eebd4d94.png">
-
-[AQueryTool(pw:bup04w)](https://aquerytool.com:443/aquerymain/index/?rurl=5a275d62-5fd7-44b5-ad51-f9ba875ceb01)
 
 ### 구현 기능
 
