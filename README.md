@@ -40,31 +40,32 @@
 
 ### 구현 기능
 
-#### Users app - 정민
+#### Users app - 전임경
 - `bcrypt`를 이용한 비밀번호 암호화
 - `JWT`를 이용한 User정보 토큰발행
+
+#### Like app - 이은주
 - 상품을 좋아요 기능 및 제거
 - user의 좋아요 상품리스트 제공
+- 결제 상세 페이지 작성
 
-#### Products app - 태우
-- 조건에 맞게 쿼리파라미터를 받아서 `Q객체`를 이용한 상품 필터링 및 정렬 (신상품, 인기상품, 검색, 카테고리, 캐릭터)
-- 쿼리파라미터를 이용한 페이징 기능
-- 한 개의 상품에 대한 상세 정보 제공
+#### Project editor app - 박문주
 
-#### Orders app - 효진(담당)🙋‍♀️
+#### Chat app - 한윤재
+- `stomp` 프로토콜을 활용한 소켓 채팅 프로그램 작성
+
+#### Payment app - 이지윤
+
+#### Product app - 이한수
+
+#### admin app - 김태민
+
+#### Orders app - 
 - 장바구니 추가(post) 삭제(delete) 업데이트(patch) 기능
 - user의 장바구니에 담긴 상품리스트 제공(get)
 - 장바구니에서 결제(post) - 데이터 무결성을 위한 `transaction`처리<br>
-  ##### 사용한 Model
-  > Order - OrderStatus : Many-to-One<br>
-  > Order - OrderItem : One-to-Many<br>
-  > Order - RecipientInfo : One-to-One<br>
-  
-  구현 부분 : https://github.com/hyo-jin-jeong/21-1st-KaKa0Adult-backend/tree/main/orders<br>
-<br>
+
 
 ## Reference
 
-- 이 프로젝트는 [카카오 프렌즈삽](https://store.kakaofriends.com/kr/index) 사이트를 참조하여 학습목적으로 만들었습니다.
-- 실무수준의 프로젝트이지만 학습용으로 만들었기 때문에 이 코드를 활용하여 이득을 취하거나 무단 배포할 경우 법적으로 문제될 수 있습니다.
-- 이 프로젝트에서 사용하고 있는 사진 대부분은 위코드에서 구매한 것이므로 해당 프로젝트 외부인이 사용할 수 없습니다.
+- 이 프로젝트는 [텀블벅](https://tumblbug.com/) 사이트를 참고하여 학습목적으로 만들었습니다.
