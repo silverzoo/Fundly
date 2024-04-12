@@ -30,9 +30,9 @@
 
 ### 사용 기술 및 tools
 > - Front-End : JS , HTML, CSS, JQuery
-> - Back-End : Spring
+> - Back-End : Java, Spring
 > - Database : MySQL, myBatis
-> - Collab : GitHub, Notion
+> - Collab : GitHub, Notion, ERDCloud
 
 ### 구현 기능
 
@@ -56,6 +56,11 @@
 - `stomp` 프로토콜을 활용한 소켓 채팅 프로그램 작성
 
 #### Payment app - 이지윤
+- 카드 결제수단 등록, 등록된 수단 조회, 기본결제수단으로 설정, 삭제 기능 구현 (CRUD)
+- 통합 결제 솔루션 PortOne `REST API` 연동
+- 주문 및 결제 로직 `Transaction` 처리
+- 회원 마이페이지의 결제수단 뷰 구현
+- 주문페이지 뷰 구현
 
 #### Product app - 이한수
 
