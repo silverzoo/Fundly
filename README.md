@@ -42,9 +42,9 @@
 - 프로필 `Image` 등록
 
 #### Like app - 이은주
-- 상품을 좋아요 기능 및 제거
-- user의 좋아요 상품리스트 제공
-- 결제 상세 페이지 작성
+- 관심있는 프로젝트 좋아요 및 보관 기능 구현
+- 유저의 좋아요 목록의 실시간 삭제 및 업데이트 처리
+- 프로젝트의 관심유저 수와 좋아요 수 업데이트 처리
 
 #### Project editor app - 박문주
 - 프로젝트 등록 파트 뷰 구현(HTML, CSS, JS, Tiles)
@@ -64,12 +64,13 @@
 
 #### Product app - 이한수
 
-#### admin app - 김태민
+#### Admin app - 김태민
 
-#### Orders app - 
+#### Orders app - 이은주, 이지윤
 - 장바구니 추가(post) 삭제(delete) 업데이트(patch) 기능
 - user의 장바구니에 담긴 상품리스트 제공(get)
-- 장바구니에서 결제(post) - 데이터 무결성을 위한 `transaction`처리<br>
+- 장바구니에서 결제(post)
+- 데이터 무결성을 위한 `transaction`처리<br>
 
 
 ## Reference
