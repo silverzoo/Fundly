@@ -33,8 +33,17 @@ public class ProjectCreatorController {
         }
     }
 
+    private void test() {
+        int[] arr = {1, 2, 3, 4, 5};
+
+        int index = 0;
+        for (int num : arr) {
+            arr[index++] = num + 2;
+        }
+    }
+
     @GetMapping("/creator")
-    public String creatorInfo (ProjectDto projectDto, Model model) {
+    public String creatorInfo(ProjectDto projectDto, Model model) {
         model.addAttribute("creator", ProjectDto.toCreatorDto(projectDto));
 
         return "project.creator";
@@ -49,7 +58,7 @@ public class ProjectCreatorController {
         return ResponseEntity.ok(true);
     }
 
-//    js 응답객체가 text를 꺼낼때 인코딩이 깨지는 문제를 produces 로 해결 할 수 있다.
+    //    js 응답객체가 text를 꺼낼때 인코딩이 깨지는 문제를 produces 로 해결 할 수 있다.
     @PostMapping(value = "/creator/image", produces = "text/plain; charset=UTF-8")
     public ResponseEntity<String> updateProfileImage(MultipartFile image, ProjectDto projectDto) {
 //        프로필 이미지를 서버에 저장한다.
@@ -66,11 +75,13 @@ public class ProjectCreatorController {
 
     @ExceptionHandler(ImageSaveFailureException.class)
     private void failToSaveImg(ImageSaveFailureException e) {
-        log.error("이미지 저장에 실패했습니다. {} \n{} ",e.getCause(), e.getStackTrace());
+        log.error("이미지 저장에 실패했습니다. {} \n{} ", e.getCause(), e.getStackTrace());
     }
+
     @ExceptionHandler(ProjectUpdateFailureException.class)
     private ResponseEntity<Boolean> failToUpdate() {
-        return ResponseEntity.badRequest().body(false);
+        return ResponseEntity.badRequest()
+                .body(false);
     }
 }
 

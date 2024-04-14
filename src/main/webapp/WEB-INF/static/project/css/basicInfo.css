@@ -273,6 +273,7 @@ div {
     color: #3d3d3d;
 }
 
+
 .pjBox .pjForm .pjImgUp p {
     color: #818181;
 }
@@ -311,7 +312,7 @@ div {
 }
 
 .category {
-    width: 270px;
+    width: 630px;
     height: 42px;
     border: 0.1px solid #eaeaea;
     padding: 0 10px;

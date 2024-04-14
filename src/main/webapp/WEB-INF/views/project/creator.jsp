@@ -88,91 +88,91 @@
             </div>
         </div>
         <!--입금계좌-->
-        <div class="pjBox acc">
-            <dl class="pjInfo">
-                <dt class="pjInfoTit">프로젝트 대표이미지
-                    <span class="icon">
-                        <i class="fas fa-solid fa-asterisk"></i>
-                    </span>
-                </dt>
-                <dd class="pjInfoDscpt">후원자들이 프로젝트의 내용을 쉽게 파악하고 좋은 인상을 받을 수 있도록 이미지 가이드라인을 따라 주세요
-                </dd>
-            </dl>
-            <div class="pjForm">
-                <ul>
-                    <li>
-                        <p>계좌 종류</p>
-                        <div class="btnWrap">
-                            <button type="button"><i class="fas fa-solid fa-user"></i>
-                                <div>개인</div>
-                            </button>
-                            <button type="button"><i class="fas fa-solid fa-briefcase"></i>
-                                <div>사업자</div>
-                            </button>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <p>예금주 생년월일</p>
-                            <div class="birth">
-                                <input type="text">
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="bank">
-                            <div class="half">
-                                <p>거래은행</p>
-                                <select id="bank" class="category">
-                                    <option value="IBK">기업은행</option>
-                                    <option value="KB">국민은행</option>
-                                    <option value="NH">농협은행</option>
-                                    <option value="SH">신한은행</option>
-                                    <option value="WR">우리은행</option>
-                                </select>
-                                <span>케이뱅크와 카카오뱅는 계좌등록이 불가합니다</span>
-                            </div>
-                            <div class="half">
-                                <p>예금주명</p>
-                                <div class="inputWrp">
-                                    <input type="text" placeholder="예금주명을 정확히 입력해주세요.">
-                                </div>
-                                <span>( 펀들리 ) 처럼 공백과 괄호까지 정확히 입력해주세요</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="accNum">
-                            <p>계좌번호</p>
-                            <div class="pjInputWrap">
-                                <div>
-                                    <input type="number" class="pjInput" placeholder="숫자로만 입력해주세요.">
-                                </div>
-                                <div class="notice">
-                                    <p>필수 항목입니다.</p>
-                                    <p>0/20</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="accUp">
-                            <p>통장 사본 첨부</p>
-                            <label for="accImg">
-                                <i class="fa-solid fa-arrow-up-from-bracket"></i><span>파일 업로드</span>
-                                <input id="accImg" accept="image/*" type="file">
-                            </label>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="btnWrp">
-                            <button type="button" class="cancel">취소</button>
-                            <button type="button" class="save">등록</button>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
+        <%--        <div class="pjBox acc">--%>
+        <%--            <dl class="pjInfo">--%>
+        <%--                <dt class="pjInfoTit">프로젝트 대표이미지--%>
+        <%--                    <span class="icon">--%>
+        <%--                        <i class="fas fa-solid fa-asterisk"></i>--%>
+        <%--                    </span>--%>
+        <%--                </dt>--%>
+        <%--                <dd class="pjInfoDscpt">후원자들이 프로젝트의 내용을 쉽게 파악하고 좋은 인상을 받을 수 있도록 이미지 가이드라인을 따라 주세요--%>
+        <%--                </dd>--%>
+        <%--            </dl>--%>
+        <%--            <div class="pjForm">--%>
+        <%--                <ul>--%>
+        <%--                    <li>--%>
+        <%--                        <p>계좌 종류</p>--%>
+        <%--                        <div class="btnWrap">--%>
+        <%--                            <button type="button"><i class="fas fa-solid fa-user"></i>--%>
+        <%--                                <div>개인</div>--%>
+        <%--                            </button>--%>
+        <%--                            <button type="button"><i class="fas fa-solid fa-briefcase"></i>--%>
+        <%--                                <div>사업자</div>--%>
+        <%--                            </button>--%>
+        <%--                        </div>--%>
+        <%--                    </li>--%>
+        <%--                    <li>--%>
+        <%--                        <div>--%>
+        <%--                            <p>예금주 생년월일</p>--%>
+        <%--                            <div class="birth">--%>
+        <%--                                <input type="text">--%>
+        <%--                            </div>--%>
+        <%--                        </div>--%>
+        <%--                    </li>--%>
+        <%--                    <li>--%>
+        <%--                        <div class="bank">--%>
+        <%--                            <div class="half">--%>
+        <%--                                <p>거래은행</p>--%>
+        <%--                                <select id="bank" class="category">--%>
+        <%--                                    <option value="IBK">기업은행</option>--%>
+        <%--                                    <option value="KB">국민은행</option>--%>
+        <%--                                    <option value="NH">농협은행</option>--%>
+        <%--                                    <option value="SH">신한은행</option>--%>
+        <%--                                    <option value="WR">우리은행</option>--%>
+        <%--                                </select>--%>
+        <%--                                <span>케이뱅크와 카카오뱅는 계좌등록이 불가합니다</span>--%>
+        <%--                            </div>--%>
+        <%--                            <div class="half">--%>
+        <%--                                <p>예금주명</p>--%>
+        <%--                                <div class="inputWrp">--%>
+        <%--                                    <input type="text" placeholder="예금주명을 정확히 입력해주세요.">--%>
+        <%--                                </div>--%>
+        <%--                                <span>( 펀들리 ) 처럼 공백과 괄호까지 정확히 입력해주세요</span>--%>
+        <%--                            </div>--%>
+        <%--                        </div>--%>
+        <%--                    </li>--%>
+        <%--                    <li>--%>
+        <%--                        <div class="accNum">--%>
+        <%--                            <p>계좌번호</p>--%>
+        <%--                            <div class="pjInputWrap">--%>
+        <%--                                <div>--%>
+        <%--                                    <input type="number" class="pjInput" placeholder="숫자로만 입력해주세요.">--%>
+        <%--                                </div>--%>
+        <%--                                <div class="notice">--%>
+        <%--                                    <p>필수 항목입니다.</p>--%>
+        <%--                                    <p>0/20</p>--%>
+        <%--                                </div>--%>
+        <%--                            </div>--%>
+        <%--                        </div>--%>
+        <%--                    </li>--%>
+        <%--                    <li>--%>
+        <%--                        <div class="accUp">--%>
+        <%--                            <p>통장 사본 첨부</p>--%>
+        <%--                            <label for="accImg">--%>
+        <%--                                <i class="fa-solid fa-arrow-up-from-bracket"></i><span>파일 업로드</span>--%>
+        <%--                                <input id="accImg" accept="image/*" type="file">--%>
+        <%--                            </label>--%>
+        <%--                        </div>--%>
+        <%--                    </li>--%>
+        <%--                    <li>--%>
+        <%--                        <div class="btnWrp">--%>
+        <%--                            <button type="button" class="cancel">취소</button>--%>
+        <%--                            <button type="button" class="save">등록</button>--%>
+        <%--                        </div>--%>
+        <%--                    </li>--%>
+        <%--                </ul>--%>
+        <%--            </div>--%>
+        <%--        </div>--%>
     </div>
 </div>
 <script src="/static/project/js/creator.js"></script>

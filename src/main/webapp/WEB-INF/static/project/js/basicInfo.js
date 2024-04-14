@@ -81,7 +81,7 @@ const getPjInfoForm = () => {
     const longTitle = document.querySelector("#longTitle").value;
     const shotTitle = document.querySelector("#shortTitle").value;
     const pjIntro = document.querySelector("#pjIntro").value;
-    const category = document.querySelector("#category").value;
+    const category = document.querySelector(".category").value;
     const searchTags = concatSearchTags();
 
     formData.append("pj_long_title", longTitle);
@@ -89,7 +89,6 @@ const getPjInfoForm = () => {
     formData.append("pj_short_intro", pjIntro);
     formData.append("ctg", category);
     formData.append("pj_tag", searchTags);
-    // formData.append("sub_ctg");
 
     return formData;
 };

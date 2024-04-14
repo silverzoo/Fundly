@@ -21,10 +21,8 @@ import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.BDDMockito.given;
-import static org.mockito.Mockito.when;
 
 @Slf4j
-//@SpringJUnitWebConfig(classes = {RootContext.class, ServletContext.class})
 @ExtendWith(MockitoExtension.class)
 class ItemServiceImplTest {
     //Service단에서는 무엇을 테스트할것인가?
@@ -45,7 +43,7 @@ class ItemServiceImplTest {
     List<ItemDto> list;
 
     @BeforeEach
-    void setUp(){
+    void setUp() {
         itemDto = ItemDto.builder()
                 .item_id(1)
                 .pj_id("pj1")
@@ -78,7 +76,7 @@ class ItemServiceImplTest {
         //해당 프로젝트의 모든 아이템 수를 센다
         //given
         given(itemMapper.count("pj1")).willReturn(5);
-        when(itemMapper.count("pj1")).thenReturn(5);
+//        when(itemMapper.count("pj1")).thenReturn(5);
 
         //when
         int cnt = itemService.getItemCount("pj1");

@@ -4,6 +4,7 @@ import com.fundly.project.exception.ImageSaveFailureException;
 import com.fundly.project.exception.ProjectAddFailureException;
 import com.fundly.project.exception.ProjectNotFoundException;
 import com.fundly.project.exception.ProjectUpdateFailureException;
+import com.fundly.project.service.CategoryService;
 import com.fundly.project.service.ProjectService;
 import com.fundly.project.util.FileUploader;
 import com.persistence.dto.ProjectAddRequest;
@@ -26,10 +27,12 @@ import javax.validation.Valid;
 @SessionAttributes("projectDto")
 public class ProjectBasicInfoController {
     ProjectService projectService;
+    CategoryService categoryService;
 
     @Autowired
-    public ProjectBasicInfoController(ProjectService projectService) {
+    public ProjectBasicInfoController(ProjectService projectService, CategoryService categoryService) {
         this.projectService = projectService;
+        this.categoryService = categoryService;
     }
 
     @ModelAttribute("projectDto")
@@ -52,7 +55,11 @@ public class ProjectBasicInfoController {
     @GetMapping("/info")
 //    프로젝트 기본정보 탭을 불러온다.
     public String getBasicInfo(@ModelAttribute ProjectDto projectDto, Model model) {
+//       프로젝트 기본 정보를 모델에 담는다.
         model.addAttribute("basicInfo", ProjectDto.toBasicInfo(projectDto));
+
+//        프로젝트 카테고리를 모델에 담는다.
+        model.addAttribute("ctg", categoryService.getList());
 
         return "project.basicInfo";
     }
